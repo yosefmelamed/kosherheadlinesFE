@@ -1,0 +1,89 @@
+.page {
+  min-height: 100vh;
+}
+
+/* ── Header / Masthead ─────────────────────────────────────────────────────── */
+.header {
+  border-bottom: 1px solid var(--rule-2);
+  padding: 0 1.5rem;
+}
+
+.headerInner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 0 0;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.edition {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.dateline {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+
+.masthead {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.rule {
+  height: 3px;
+  background: var(--ink);
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* ── Error / Empty banners ─────────────────────────────────────────────────── */
+.errorBanner,
+.emptyBanner {
+  max-width: 860px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.errorBanner p,
+.emptyBanner p {
+  font-size: 14px;
+  color: var(--ink-2);
+  margin-bottom: 0.75rem;
+}
+
+.errorBanner code,
+.emptyBanner code {
+  font-family: 'SF Mono', 'Fira Mono', monospace;
+  font-size: 13px;
+  background: var(--surface);
+  border: 1px solid var(--rule-2);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  color: var(--ink-2);
+}
