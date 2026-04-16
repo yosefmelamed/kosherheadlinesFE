@@ -1,0 +1,15 @@
+steps:
+
+name: 'gcr.io/cloud-builders/docker'
+args:
+
+'build'
+'--build-arg'
+'NEXT_PUBLIC_API_URL=https://kosherheadlinesbe.onrender.com'
+'-t'
+'gcr.io/$PROJECT_ID/headlines-frontend'
+'.'
+images:
+
+
+'gcr.io/$PROJECT_ID/headlines-frontend'
