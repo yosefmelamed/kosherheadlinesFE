@@ -2,7 +2,7 @@ import { fetchDates, fmtFullDate } from '@/lib/types';
 import HeadlinesClient from '@/components/HeadlinesClient';
 import styles from './page.module.css';
 
-export const revalidate = 300; // revalidate every 5 min
+export const revalidate = 0; // revalidate every 5 min
 
 export default async function HomePage() {
   let dates: { fetch_date: string; story_count: number }[] = [];
