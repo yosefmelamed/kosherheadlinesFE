@@ -5,6 +5,7 @@ import styles from './page.module.css';
 export const revalidate = 0; // revalidate every 5 min
 
 export default async function HomePage() {
+  console.log('API URL is:', process.env.NEXT_PUBLIC_API_URL);
   let dates: { fetch_date: string; story_count: number }[] = [];
   let error: string | null = null;
 
