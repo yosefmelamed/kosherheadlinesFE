@@ -1,15 +1,11 @@
 steps:
 
-name: 'gcr.io/cloud-builders/docker'
+name: gcr.io/k8s-skaffold/pack
 args:
 
-'build'
-'--build-arg'
-'NEXT_PUBLIC_API_URL=https://kosherheadlinesbe.onrender.com'
-'-t'
-'gcr.io/$PROJECT_ID/headlines-frontend'
-'.'
-images:
-
-
-'gcr.io/$PROJECT_ID/headlines-frontend'
+build
+northamerica-northeast1-docker.pkg.dev/project-35785b84-1426-4031-934/cloud-run-source-deploy/kosherheadlinesfe/kosherheadlinesfe
+--builder
+gcr.io/buildpacks/builder:latest
+--env
+NEXT_PUBLIC_API_URL=https://kosherheadlinesbe.onrender.com
