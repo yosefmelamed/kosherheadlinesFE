@@ -7,4 +7,5 @@ steps:
       - 'gcr.io/buildpacks/builder:latest'
       - '--env'
       - 'NEXT_PUBLIC_API_URL=https://kosherheadlinesbe.onrender.com'
- 
+options:
+  logging: CLOUD_LOGGING_ONLY
