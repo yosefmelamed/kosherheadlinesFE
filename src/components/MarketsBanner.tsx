@@ -12,7 +12,8 @@ interface Quote {
   changePct: number;
 }
  
-const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+//const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+const API = 'https://kosherheadlinesbe.onrender.com';
  
 function fmtPrice(price: number): string {
   if (price >= 1000) return price.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });

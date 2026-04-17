@@ -49,7 +49,8 @@ export function fmtTime(isoStr?: string): string {
   } catch { return ''; }
 }
 
-const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+//const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+const API = 'https://kosherheadlinesbe.onrender.com';
 
 export async function fetchDates(): Promise<DateEntry[]> {
   const res = await fetch(`${API}/api/dates`, { next: { revalidate: 300 } });
