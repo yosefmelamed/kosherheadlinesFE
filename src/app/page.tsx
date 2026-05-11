@@ -27,7 +27,7 @@ export default async function HomePage() {
             <span className={styles.edition}>Daily Briefing</span>
             <span className={styles.dateline}>{today}</span>
           </div>
-          <h1 className={styles.masthead}>Headlines</h1>
+          <h1 className={styles.masthead}>Kosher Headlines</h1>
           <p className={styles.tagline}>Curated by AI · Filtered · Concise</p>
           <div className={styles.rule} />
         </div>
