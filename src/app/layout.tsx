@@ -3,9 +3,14 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Footer from '@/components/Footer';
  
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Kosher Headlines',
   description: 'AI-curated daily Jewish and world news briefing',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 };
  
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -26,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `,
           }}
         />
-      </head>
+        </head>
       <body>
         {children}
         <Footer />
